@@ -1,0 +1,15 @@
+<ion-card>
+  <app-plugin-card-header pluginId="action-sheet"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col><ion-button (click)="showActionSheet()">Show Sheet</ion-button></ion-col>
+      </ion-row>
+      <ion-row *ngIf="chosenResult">
+        <ion-col>
+          <ion-label>Last Chosen Action: {{ chosenResult }}</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

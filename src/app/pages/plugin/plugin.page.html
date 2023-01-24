@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Plugins</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ng-container [ngSwitch]="package">
+    <app-action-sheet-card *ngSwitchCase="'action-sheet'"></app-action-sheet-card>
+    <app-app-launcher-card *ngSwitchCase="'app-launcher'"></app-app-launcher-card>
+    <app-app-card *ngSwitchCase="'app'"></app-app-card>
+  </ng-container>
+</ion-content>

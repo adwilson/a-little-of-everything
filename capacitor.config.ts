@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'a-little-of-everything',
+  appId: 'uk.co.cammacapps.alittleofeverything',
+  appName: 'A Little of Everything',
   webDir: 'www',
   bundledWebRuntime: false
 };

@@ -1,0 +1,31 @@
+<ion-card>
+  <app-plugin-card-header pluginId="app"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>ID</ion-col>
+        <ion-col>{{ this.id }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Name</ion-col>
+        <ion-col>{{ this.name }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Version</ion-col>
+        <ion-col>{{ this.version }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Build</ion-col>
+        <ion-col>{{ this.build }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Is Active</ion-col>
+        <ion-col>{{ this.isActive ? 'Yes' : 'No' }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Launch URL</ion-col>
+        <ion-col>{{ this.launchUrl }}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

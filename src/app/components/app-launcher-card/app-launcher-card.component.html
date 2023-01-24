@@ -1,0 +1,11 @@
+<ion-card>
+  <app-plugin-card-header pluginId="app-launcher"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-item>
+      Can Launch BBC News?: {{ canOpenBbcNewsApp ? 'Yes' : 'No' }}
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="launchBbcNewsApp()">Launch BBC News</ion-button>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
