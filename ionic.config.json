@@ -1,0 +1,7 @@
+{
+  "name": "a-little-of-everything",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
