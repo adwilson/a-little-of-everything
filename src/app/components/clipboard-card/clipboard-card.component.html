@@ -1,0 +1,21 @@
+<ion-card>
+  <app-plugin-card-header pluginId="clipboard"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="read()">Read Clipboard</ion-button>
+          <ion-button (click)="write()">Write String into Clipboard</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Type</ion-col>
+        <ion-col>{{ clipboardType }}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>Value</ion-col>
+        <ion-col>{{ clipboardValue }}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

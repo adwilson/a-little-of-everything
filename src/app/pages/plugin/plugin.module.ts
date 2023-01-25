@@ -13,6 +13,7 @@ import { PluginCardHeaderComponent } from '../../components/plugin-card-header/p
 import { AppCardComponent } from '../../components/app-card/app-card.component';
 import { BrowserCardComponent } from '../../components/browser-card/browser-card.component';
 import { CameraCardComponent } from '../../components/camera-card/camera-card.component';
+import { ClipboardCardComponent } from '../../components/clipboard-card/clipboard-card.component';
 
 const miscComponents = [
   PluginCardHeaderComponent
@@ -23,7 +24,8 @@ const pluginCardComponents = [
   AppLauncherCardComponent,
   AppCardComponent,
   BrowserCardComponent,
-  CameraCardComponent
+  CameraCardComponent,
+  ClipboardCardComponent
 ]
 
 @NgModule({

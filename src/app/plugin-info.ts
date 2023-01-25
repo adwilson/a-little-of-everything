@@ -28,6 +28,12 @@ const pluginInfo: PluginInfo[] = [
     title: 'Camera',
     icon: 'camera',
     package: '@capacitor/camera'
+  },
+  {
+    id: 'clipboard',
+    title: 'Clipboard',
+    icon: 'clipboard',
+    package: '@capacitor/clipboard'
   }
 ];
 
