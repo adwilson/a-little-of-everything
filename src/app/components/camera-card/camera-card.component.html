@@ -1,0 +1,34 @@
+<ion-card>
+  <app-plugin-card-header pluginId="camera"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          Choose or take an image:
+          <ion-item [lines]="false">
+            <ion-checkbox slot="start" [(ngModel)]="allowEditing"></ion-checkbox>
+            <ion-label>Allow Editing?</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="takePicture()">Camera</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="getPicture()">Gallery</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="imageSrc">
+        <ion-col>
+          <div>
+            <ion-img [src]="imageSrc" style="max-width: 75%; max-height: 75%"></ion-img>
+          </div>
+          <div>
+            <ion-label>Path: {{ imagePath }}</ion-label>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

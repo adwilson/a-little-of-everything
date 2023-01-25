@@ -16,6 +16,18 @@ const pluginInfo: PluginInfo[] = [
     title: 'App',
     icon: 'alert',
     package: '@capacitor/app'
+  },
+  {
+    id: 'browser',
+    title: 'Browser',
+    icon: 'globe',
+    package: '@capacitor/browser'
+  },
+  {
+    id: 'camera',
+    title: 'Camera',
+    icon: 'camera',
+    package: '@capacitor/camera'
   }
 ];
 

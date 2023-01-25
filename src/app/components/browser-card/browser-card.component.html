@@ -1,0 +1,17 @@
+<ion-card>
+  <app-plugin-card-header pluginId="browser"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="openBrowser()">Open Browser</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="youReturned">
+        <ion-col>
+          You returned!
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

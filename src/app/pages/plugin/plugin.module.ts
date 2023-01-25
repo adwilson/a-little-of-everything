@@ -11,6 +11,8 @@ import { ActionSheetCardComponent } from '../../components/action-sheet-card/act
 import { AppLauncherCardComponent } from '../../components/app-launcher-card/app-launcher-card.component';
 import { PluginCardHeaderComponent } from '../../components/plugin-card-header/plugin-card-header.component';
 import { AppCardComponent } from '../../components/app-card/app-card.component';
+import { BrowserCardComponent } from '../../components/browser-card/browser-card.component';
+import { CameraCardComponent } from '../../components/camera-card/camera-card.component';
 
 const miscComponents = [
   PluginCardHeaderComponent
@@ -19,7 +21,9 @@ const miscComponents = [
 const pluginCardComponents = [
   ActionSheetCardComponent,
   AppLauncherCardComponent,
-  AppCardComponent
+  AppCardComponent,
+  BrowserCardComponent,
+  CameraCardComponent
 ]
 
 @NgModule({
