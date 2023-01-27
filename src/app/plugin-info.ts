@@ -34,6 +34,18 @@ const pluginInfo: PluginInfo[] = [
     title: 'Clipboard',
     icon: 'clipboard',
     package: '@capacitor/clipboard'
+  },
+  {
+    id: 'device',
+    title: 'Device',
+    icon: 'phone-portrait',
+    package: '@capacitor/device'
+  },
+  {
+    id: 'dialog',
+    title: 'Dialog',
+    icon: 'browsers',
+    package: '@capacitor/dialog'
   }
 ];
 

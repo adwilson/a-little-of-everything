@@ -1,0 +1,21 @@
+<ion-card>
+  <app-plugin-card-header pluginId="dialog"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" (click)="showAlert()">Alert</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="showConfirm()">Confirm</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" (click)="showPrompt()">Prompt</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="lastChoice">
+        <ion-label>{{ lastChoice }}</ion-label>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
