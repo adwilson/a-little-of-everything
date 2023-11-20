@@ -19,16 +19,18 @@
           <ion-button (click)="getPicture()">Gallery</ion-button>
         </ion-col>
       </ion-row>
-      <ion-row *ngIf="imageSrc">
-        <ion-col>
-          <div>
-            <ion-img [src]="imageSrc" style="max-width: 75%; max-height: 75%"></ion-img>
-          </div>
-          <div>
-            <ion-label>Path: {{ imagePath }}</ion-label>
-          </div>
-        </ion-col>
-      </ion-row>
+      @if (imageSrc) {
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-img [src]="imageSrc" style="max-width: 75%; max-height: 75%"></ion-img>
+            </div>
+            <div>
+              <ion-label>Path: {{ imagePath }}</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+      }
     </ion-grid>
   </ion-card-content>
 </ion-card>

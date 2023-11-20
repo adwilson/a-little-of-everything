@@ -13,9 +13,11 @@
           <ion-button expand="block" (click)="showPrompt()">Prompt</ion-button>
         </ion-col>
       </ion-row>
-      <ion-row *ngIf="lastChoice">
-        <ion-label>{{ lastChoice }}</ion-label>
-      </ion-row>
+      @if (lastChoice) {
+        <ion-row>
+          <ion-label>{{ lastChoice }}</ion-label>
+        </ion-row>
+      }
     </ion-grid>
   </ion-card-content>
 </ion-card>

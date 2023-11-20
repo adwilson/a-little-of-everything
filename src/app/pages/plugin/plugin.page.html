@@ -8,15 +8,33 @@
 </ion-header>
 
 <ion-content>
-  <ng-container [ngSwitch]="package">
-    <app-action-sheet-card *ngSwitchCase="'action-sheet'"></app-action-sheet-card>
-    <app-app-launcher-card *ngSwitchCase="'app-launcher'"></app-app-launcher-card>
-    <app-app-card *ngSwitchCase="'app'"></app-app-card>
-    <app-browser-card *ngSwitchCase="'browser'"></app-browser-card>
-    <app-camera-card *ngSwitchCase="'camera'"></app-camera-card>
-    <app-clipboard-card *ngSwitchCase="'clipboard'"></app-clipboard-card>
-    <app-device-card *ngSwitchCase="'device'"></app-device-card>
-    <app-dialog-card *ngSwitchCase="'dialog'"></app-dialog-card>
-    <app-filesystem-card *ngSwitchCase="'filesystem'"></app-filesystem-card>
-  </ng-container>
+  @switch (package) {
+    @case ('action-sheet') {
+      <app-action-sheet-card ></app-action-sheet-card>
+    }
+    @case ('app-launcher') {
+      <app-app-launcher-card ></app-app-launcher-card>
+    }
+    @case ('app') {
+      <app-app-card ></app-app-card>
+    }
+    @case ('browser') {
+      <app-browser-card ></app-browser-card>
+    }
+    @case ('camera') {
+      <app-camera-card ></app-camera-card>
+    }
+    @case ('clipboard') {
+      <app-clipboard-card ></app-clipboard-card>
+    }
+    @case ('device') {
+      <app-device-card ></app-device-card>
+    }
+    @case ('dialog') {
+      <app-dialog-card ></app-dialog-card>
+    }
+    @case ('filesystem') {
+      <app-filesystem-card ></app-filesystem-card>
+    }
+  }
 </ion-content>

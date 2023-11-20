@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Filesystem } from '@capacitor/filesystem';
-import { Directory, Encoding } from '@capacitor/filesystem/dist/esm/definitions';
+import { Directory, Encoding, Filesystem } from '@capacitor/filesystem';
 
 @Component({
   selector: 'app-filesystem-card',

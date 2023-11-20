@@ -3,13 +3,15 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="menu-list">
-          <ion-list-header>A Little Of Everything</ion-list-header>
-          <ion-menu-toggle auto-hide="false" *ngFor="let plugin of plugins">
-            <ion-item routerLink="plugin/{{ plugin.id }}" lines="none" routerLinkActive="selected">
-              <ion-icon slot="start" [name]="plugin.icon"></ion-icon>
-              <ion-label>{{ plugin.title }}</ion-label>
-            </ion-item>
-          </ion-menu-toggle>
+          <ion-list-header>A Little of Everything</ion-list-header>
+          @for (plugin of plugins; track plugin.id) {
+            <ion-menu-toggle auto-hide="false">
+              <ion-item routerLink="plugin/{{ plugin.id }}" lines="none" routerLinkActive="selected">
+                <ion-icon slot="start" [name]="plugin.icon"></ion-icon>
+                <ion-label>{{ plugin.title }}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          }
         </ion-list>
       </ion-content>
     </ion-menu>
