@@ -16,6 +16,7 @@ import { CameraCardComponent } from '../../components/camera-card/camera-card.co
 import { ClipboardCardComponent } from '../../components/clipboard-card/clipboard-card.component';
 import { DeviceCardComponent } from '../../components/device-card/device-card.component';
 import { DialogCardComponent } from '../../components/dialog-card/dialog-card.component';
+import { FilesystemCardComponent } from '../../components/filesystem-card/filesystem-card.component';
 
 const miscComponents = [
   PluginCardHeaderComponent
@@ -29,7 +30,8 @@ const pluginCardComponents = [
   CameraCardComponent,
   ClipboardCardComponent,
   DeviceCardComponent,
-  DialogCardComponent
+  DialogCardComponent,
+  FilesystemCardComponent
 ]
 
 @NgModule({

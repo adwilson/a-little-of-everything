@@ -1,0 +1,25 @@
+<ion-card>
+  <app-plugin-card-header pluginId="filesystem"></app-plugin-card-header>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-label>Data</ion-label>
+          <pre>{{ stringify(dataDir, undefined, 2) }}</pre>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label>Library</ion-label>
+          <pre>{{ stringify(libraryDir, undefined, 2) }}</pre>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label>External</ion-label>
+          <pre>{{ stringify(externalDir, undefined, 2) }}</pre>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

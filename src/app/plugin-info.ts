@@ -46,6 +46,12 @@ const pluginInfo: PluginInfo[] = [
     title: 'Dialog',
     icon: 'browsers',
     package: '@capacitor/dialog'
+  },
+  {
+    id: 'filesystem',
+    title: 'Filesystem',
+    icon: 'document',
+    package: '@capacitor/filesystem'
   }
 ];
 
