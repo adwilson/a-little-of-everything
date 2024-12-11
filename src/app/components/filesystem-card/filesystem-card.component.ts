@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Directory, Encoding, Filesystem } from '@capacitor/filesystem';
+import { IonicModule } from '@ionic/angular';
+import { PluginCardHeaderComponent } from '../plugin-card-header/plugin-card-header.component';
 
 @Component({
-  selector: 'app-filesystem-card',
-  templateUrl: './filesystem-card.component.html',
-  styleUrls: ['./filesystem-card.component.scss'],
+    selector: 'app-filesystem-card',
+    templateUrl: './filesystem-card.component.html',
+    styleUrls: ['./filesystem-card.component.scss'],
+    imports: [IonicModule, PluginCardHeaderComponent]
 })
 export class FilesystemCardComponent implements OnInit {
 

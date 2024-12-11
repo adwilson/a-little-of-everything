@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Dialog } from '@capacitor/dialog';
+import { IonicModule } from '@ionic/angular';
+import { PluginCardHeaderComponent } from '../plugin-card-header/plugin-card-header.component';
 
 @Component({
-  selector: 'app-dialog-card',
-  templateUrl: './dialog-card.component.html',
-  styleUrls: ['./dialog-card.component.scss'],
+    selector: 'app-dialog-card',
+    templateUrl: './dialog-card.component.html',
+    styleUrls: ['./dialog-card.component.scss'],
+    imports: [IonicModule, PluginCardHeaderComponent]
 })
 export class DialogCardComponent implements OnInit {
   lastChoice = '';

@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { App } from '@capacitor/app';
+import { IonicModule } from '@ionic/angular';
+import { PluginCardHeaderComponent } from '../plugin-card-header/plugin-card-header.component';
 
 @Component({
-  selector: 'app-app-card',
-  templateUrl: './app-card.component.html',
-  styleUrls: ['./app-card.component.scss'],
+    selector: 'app-app-card',
+    templateUrl: './app-card.component.html',
+    styleUrls: ['./app-card.component.scss'],
+    imports: [IonicModule, PluginCardHeaderComponent]
 })
 export class AppCardComponent implements OnInit {
 

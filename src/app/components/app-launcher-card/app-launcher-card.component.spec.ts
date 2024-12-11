@@ -9,8 +9,7 @@ describe('AppLauncherCardComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppLauncherCardComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), AppLauncherCardComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppLauncherCardComponent);

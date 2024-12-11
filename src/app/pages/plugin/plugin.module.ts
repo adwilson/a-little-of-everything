@@ -35,20 +35,18 @@ const pluginCardComponents = [
 ]
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    PluginPageRoutingModule
-  ],
-  declarations: [
-    PluginPage,
-    ...miscComponents,
-    ...pluginCardComponents
-  ],
-  exports: [
-    ...miscComponents,
-    ...pluginCardComponents
-  ]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        PluginPageRoutingModule,
+        PluginPage,
+        ...miscComponents,
+        ...pluginCardComponents
+    ],
+    exports: [
+        ...miscComponents,
+        ...pluginCardComponents
+    ]
 })
 export class PluginPageModule {}

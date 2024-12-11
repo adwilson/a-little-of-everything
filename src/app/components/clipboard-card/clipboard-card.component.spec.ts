@@ -9,8 +9,7 @@ describe('ClipboardCardComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ClipboardCardComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), ClipboardCardComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ClipboardCardComponent);

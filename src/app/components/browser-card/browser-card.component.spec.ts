@@ -9,8 +9,7 @@ describe('BrowserCardComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ BrowserCardComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), BrowserCardComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(BrowserCardComponent);

@@ -9,8 +9,7 @@ describe('PluginCardHeaderComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PluginCardHeaderComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), PluginCardHeaderComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(PluginCardHeaderComponent);

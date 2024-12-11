@@ -9,8 +9,7 @@ describe('FilesystemCardComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FilesystemCardComponent ],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot(), FilesystemCardComponent]
     }).compileComponents();
 
     fixture = TestBed.createComponent(FilesystemCardComponent);
