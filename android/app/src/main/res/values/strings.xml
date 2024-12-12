@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="app_name">A Little of Everything</string>
-    <string name="title_activity_main">ALOE</string>
+    <string name="title_activity_main">A Little of Everything</string>
     <string name="package_name">uk.co.cammacapps.alittleofeverything</string>
     <string name="custom_url_scheme">uk.co.cammacapps.alittleofeverything</string>
 </resources>

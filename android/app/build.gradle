@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    namespace "uk.co.cammacapps.alittleofeverything"
+    compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "uk.co.cammacapps.alittleofeverything"
         minSdkVersion rootProject.ext.minSdkVersion
