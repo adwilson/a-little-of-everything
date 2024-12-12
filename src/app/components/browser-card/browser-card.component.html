@@ -7,7 +7,7 @@
           <ion-button (click)="openBrowser()">Open Browser</ion-button>
         </ion-col>
       </ion-row>
-      @if (youReturned) {
+      @if (youReturned()) {
         <ion-row>
           <ion-col>
             You returned!

@@ -5,19 +5,19 @@
       <ion-row>
         <ion-col>
           <ion-label>Data</ion-label>
-          <pre>{{ stringify(dataDir, undefined, 2) }}</pre>
+          <pre>{{ stringify(dataDir(), undefined, 2) }}</pre>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-label>Library</ion-label>
-          <pre>{{ stringify(libraryDir, undefined, 2) }}</pre>
+          <pre>{{ stringify(libraryDir(), undefined, 2) }}</pre>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-label>External</ion-label>
-          <pre>{{ stringify(externalDir, undefined, 2) }}</pre>
+          <pre>{{ stringify(externalDir(), undefined, 2) }}</pre>
         </ion-col>
       </ion-row>
     </ion-grid>

@@ -13,9 +13,9 @@
           <ion-button expand="block" (click)="showPrompt()">Prompt</ion-button>
         </ion-col>
       </ion-row>
-      @if (lastChoice) {
+      @if (lastChoice()) {
         <ion-row>
-          <ion-label>{{ lastChoice }}</ion-label>
+          <ion-label>{{ lastChoice() }}</ion-label>
         </ion-row>
       }
     </ion-grid>
